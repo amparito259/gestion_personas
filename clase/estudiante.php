@@ -6,7 +6,7 @@ class estudiante extends persona {
     public $semestre;
 
 
-    public function __construct($nombre, $apellido, $edad, $correo, $carrera, $semestre)
+    public function __construct($carrera, $semestre)
     {
         $this->carrera = $carrera;
         $this->semestre = $semestre;
