@@ -6,8 +6,6 @@ class persona {
     public $apellido;
     public $edad;
     public $correo;
-    
-
 
 
     public function __construct($nombre,$apellido,$edad,$correo) 
@@ -20,7 +18,7 @@ class persona {
     }
    
     public function saludar () {
-        return "Hola, Mi nombre es: " . $this->nombre . " " . $this->apellido . "<br>" ."Mi Edad es: " . $this->edad . "<br>" ."Mi Correo es: " . $this->correo . "<br>";
+        return "Hola, Mi nombre es: " . $this->nombre . "</br>" . "Mi apellido es: " . $this->apellido . "</br>" . "Mi Edad es: " . $this->edad . "</br>" . "Mi Correo es: " . $this->correo . "</br>";
     }
 }
-
+?>
