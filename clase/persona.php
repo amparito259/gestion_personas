@@ -1,8 +1,26 @@
 <?php
 
 class persona {
+
+    public $nombre;
+    public $apellido;
+    public $edad;
+    public $correo;
+    
+
+
+
+    public function __construct($nombre,$apellido,$edad,$correo) 
+    {
+      $this->nombre = $nombre;
+      $this->apellido = $apellido;
+      $this->edad = $edad;
+      $this->correo = $correo;
+      
+    }
    
     public function saludar () {
-        echo "Hola mi nombre es: ";
+        return "Hola, Mi nombre es: " . $this->nombre . " " . $this->apellido . "<br>" ."Mi Edad es: " . $this->edad . "<br>" ."Mi Correo es: " . $this->correo . "<br>";
     }
 }
+
